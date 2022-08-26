@@ -1,38 +1,146 @@
-.App {
+*{
+  font-size: 62.5%
+}
+
+/*=============Header==============*/
+.navBar{
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 5px solid;
+  height: 12vh;
+  align-items: center;
+}
+
+.links{
+  display: flex;
+  border: 1px solid;
+  font-size: 3rem;
+  padding: 1%;
+  color: white;
+  background-color: rgb(0, 0, 0);
+  text-decoration: none;
+  width: 10%;
+  height: 6vh;
+  align-items: center;
+  justify-content: center;
+  font-weight: bolder;
+}
+
+.headerMessage{
+  font-size: 4rem;
+  font-weight: bolder;
+  margin-right: 20%;
+}
+
+/*===========end of header==========*/
+/*===========Login==================*/
+
+.loginContainer{
+  width: 70%;
+  margin: 0 auto;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.loginHeader{
+  font-size: 10rem;
+  font-weight: bolder;
+  text-align: center;
+  height: 8vh;
+}
+
+.formContainer{
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.labels{
+  font-size: 4rem;
+  margin-right: 25%;
+  font-weight: bolder;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.inputs{
+  width: 45%;
+  height: 7vh;
+  background-color: black;
+  margin-bottom: 3.5%;
+  color: white;
+  font-size: 2.5rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.submit:hover{
+  cursor: pointer;
+}
+
+.error{
+  font-size: 5rem;
+  color: red;
+  text-align: center;
+}
+
+/*===========end of login========*/
+/*===========addFriends minor adjustments from login CSS========*/
+
+.addFriendsInputs{
+ width: 50.5%
+}
+
+.addFriendsSubmit{
+  width: 51.3%
+}
+
+/*========end of addFriends adjustments========*/
+/*========friendsList============*/
+
+.friendsListContainer{
   display: flex;
   flex-direction: column;
-  align-items: center;
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  height: 80vh
+}
+
+.friendsListH1{
+  font-size: 8rem;
+}
+
+.friendsListLi{
+  font-size: 3.5rem;
+  padding: 1%;
+  width: 100%
+}
+
+.friendsListUl{
+  list-style: inside;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  
 }
 
-.App-link {
-  color: #61dafb;
+/*=========end of friendsList==========*/
+/*=========logout==========*/
+
+.logout{
+  height: 30vh;
+  width: 50%;
+  margin: 0 auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.logoutDiv{
+  font-size: 7rem;
+  text-align: center;
+}
+
+.logoutBtn{
+  font-size: 8rem;
+  margin: 1%;
+  margin-left: 20%;
+}
+
+.logoutBtn:hover{
+  cursor: pointer;
 }
